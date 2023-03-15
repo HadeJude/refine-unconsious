@@ -75,9 +75,9 @@ New `qb-ambulancejob` Function:
                         Color = "rgba(224, 53, 40, 1.0)",  -- change the color that you want
                         Label = "Unconsious",
                         Animation = {
-                            animationDictionary = "missarmenian2", 
+                            animDict = "missarmenian2", 
                             animationName = "drunk_loop",
-                            flag = 1,
+                            flags = 1,
                         },
                         DisableControls = {
                             Mouse = false,
