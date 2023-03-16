@@ -76,13 +76,14 @@ New `qb-ambulancejob` Function:
                         Label = "Unconsious",
                         Animation = {
                             animDict = "missarmenian2", 
-                            animationName = "drunk_loop",
+                            anim = "drunk_loop",
                             flags = 1,
                         },
                         DisableControls = {
-                            Mouse = false,
-                            Player = true,
-                            Vehicle = false
+                           disableMovement = true,
+                           disableCarMovement = true,
+                           disableMouse = false,
+                           disableCombat = true,
                         },    
                         onStart = function()  -- Here's when the magic start happen Using break no need to loop always ^_*
                             KnockOut = true
