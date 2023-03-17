@@ -63,7 +63,7 @@ New `qb-ambulancejob` Function:
             if not IsEntityAPed(victim) then return end
             if victimDied and NetworkGetPlayerIndexFromPed(victim) == PlayerId() and IsEntityDead(PlayerPedId()) then
                 if not InLaststand then
-                if HasPedBeenDamagedByWeapon(ped, GetHashKey('WEAPON_UNARMED'), 0) then
+                if HasPedBeenDamagedByWeapon(PlayerPedId(), GetHashKey('WEAPON_UNARMED'), 0) then
                     ped = PlayerPedId()
                     pos = GetEntityCoords(ped)
                     NetworkResurrectLocalPlayer(pos.x, pos.y, pos.z, GetEntityHeading(ped), true, false)
